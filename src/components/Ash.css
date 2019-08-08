@@ -1,0 +1,11 @@
+.ash {
+    width: 70vw;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/ash.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    flex-direction: column;
+}

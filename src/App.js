@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import pokemon from "./pokemon.json";
 import Pokemon from "./components/Pokemon";
+import Ash from "./components/Ash";
 import {Link, Route} from "react-router-dom";
 
 class App extends Component {
@@ -13,8 +14,8 @@ class App extends Component {
 
   render() {
     let pokemonList = pokemon.map((pokemon, index)=> 
-      <li>
-        <Link key={pokemon._id} to={`/pokemon/${pokemon._id}`}>{pokemon.name}</Link>
+      <li key={pokemon._id}>
+        <Link  to={`/pokemon/${pokemon._id}`}>{pokemon.name}</Link>
       </li>
     )
     return (
@@ -26,6 +27,7 @@ class App extends Component {
             </ul>
           </div>
 
+          <Route exact path="/" component={Ash} />
           <Route path="/pokemon/:pokeId" component={Pokemon} />
 
         </div>
