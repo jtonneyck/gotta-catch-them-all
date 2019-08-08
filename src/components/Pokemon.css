@@ -1,0 +1,25 @@
+.pokemon {
+    width: 70vw;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/pokeball.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    flex-direction: column;
+}
+
+.pokemon p {
+    font-size: 12px;
+}
+
+.pokemon .sprite-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pokemon .sprite-container img {
+    width: 30%;
+}
